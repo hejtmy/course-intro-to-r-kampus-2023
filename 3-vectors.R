@@ -87,12 +87,22 @@ colors[i_number]
 rolled_number <- sample(numbers, 1)
 # what color was it?
 
+table(sample(numbers, 20))
+sample(numbers, size = 20, )
+sample(numbers, 20, replace=TRUE)
+sample(numbers, replace = TRUE, size = 20)
+# sample(numbers, TRUE, 20)
+rolled_number <- sample(numbers, 20, replace=TRUE)
 
-# generate 20 numbers
+set.seed(2023)
+rolled_numbers <- sample(numbers, 20, replace=TRUE)
+#save to "rolled_colors"
+rolled_colors <- colors[rolled_number + 1]
 # return colors
-# save to "rolled_colors"¨
+# save to "rolled_colors"
 table(rolled_colors)
 
+?sample
 ?rep
 ?seq
 seq(0, 1, length.out = 11)
